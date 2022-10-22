@@ -3,6 +3,7 @@ import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
+import Textmodel from "../components/Textmodel";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -79,12 +80,8 @@ export default function Home() {
             </a>
           </div>
         </nav>
-        <div className="absolute z-10 top-0 left-0">
-          <Spline
-            scene="https://prod.spline.design/PvbAXoUOqde0rLjb/scene.splinecode"
-            height={300}
-            width={600}
-          />
+        <div className="absolute z-10 top-[10%] left-[2%] h-1/2 w-1/2">
+          <Textmodel />
         </div>
         <main className="absolute z-10  top-80 flex-col h-3/4 w-full overflow-sticky">
           <div className="text-5xl ml-[2%] font-Rampart w-96 h-48 text-slate-500 hover:text-blue-900">

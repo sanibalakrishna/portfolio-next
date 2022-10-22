@@ -20,7 +20,7 @@ function Card({ title, imgSrc, techStack, live, github }) {
             height={100}
           />
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center gap-2">
           <p className="text-black text-sm pt-2">{techStack}</p>
           <Link href={live} className="pt-2 pl-2" target="_blank">
             <motion.div whileTap={{ scale: 0.5 }}>

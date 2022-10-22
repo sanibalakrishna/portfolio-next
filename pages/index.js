@@ -86,8 +86,8 @@ export default function Home() {
             width={600}
           />
         </div>
-        <main className="absolute z-10 left-20 top-80 flex-col h-3/4 w-full overflow-sticky">
-          <div className="text-5xl font-Rampart w-96 h-48 text-slate-500 hover:text-blue-900">
+        <main className="absolute z-10  top-80 flex-col h-3/4 w-full overflow-sticky">
+          <div className="text-5xl ml-[2%] font-Rampart w-96 h-48 text-slate-500 hover:text-blue-900">
             <Typewriter
               options={{
                 autoStart: true,
@@ -101,7 +101,7 @@ export default function Home() {
               }}
             />
           </div>
-          <section id="about">
+          <section id="about" className="ml-[2%]">
             <h1 className="text-semibold text-3xl font-Rampart text-slate-600">
               About
             </h1>
@@ -128,10 +128,13 @@ export default function Home() {
               journey I have learnt languages like C++,Java,Python etc...
             </p>
           </section>
-          <h1 className=" text-slate-600 font-Rampart text-3xl" id="education">
+          <h1
+            className=" text-slate-600 font-Rampart text-3xl ml-[2%]"
+            id="education"
+          >
             Education
           </h1>
-          <section className="w-3/4 ">
+          <section className="w-3/4 ml-[2%] ">
             <VerticalTimeline>
               {Education &&
                 Education.map((m) => (
@@ -168,7 +171,7 @@ export default function Home() {
             </VerticalTimeline>
           </section>
 
-          <section className="flex flex-col" id="projects">
+          <section className="flex flex-col ml-[2%] " id="projects">
             <h1 className="text-slate-600 font-Rampart text-3xl">Projects</h1>
             <div className="w-[45%]  grid grid-cols-2 gap-4">
               {Projects &&
@@ -184,10 +187,10 @@ export default function Home() {
                 ))}
             </div>
           </section>
-          <h1 className=" text-slate-600  font-Rampart text-3xl">
+          <h1 className=" text-slate-600  font-Rampart text-3xl ml-[2%]">
             Follow me on
           </h1>
-          <section className="h-32 " id="contacts">
+          <section className="h-32 ml-[2%]" id="contacts">
             <div className="flex items-center justify-evenly w-full my-4 flex-wrap gap-4">
               {Socials &&
                 Socials.map((n) => (

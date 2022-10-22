@@ -4,6 +4,7 @@ import Shoe from "./assets/Shoe.png";
 import Ellen from "./assets/Ellen.png";
 import shms from "./assets/shms.png";
 import todo from "./assets/todo.png";
+import dex from "./assets/dex.png";
 import {
   IoLogoGithub,
   IoLogoYoutube,
@@ -40,6 +41,14 @@ export const Education = [
 export const Projects = [
   {
     id: 1,
+    title: "Decentralized-Exchange-App",
+    imgSrc: dex,
+    techStack: "NextJS,Hardhat,Solidity",
+    live: "https://uniswap-lyart.vercel.app/",
+    github: "https://github.com/sanibalakrishna/Uniswap",
+  },
+  {
+    id: 2,
     title: "House-Auction-Place",
     imgSrc: House,
     techStack: "React-JS,HTML/CSS,Firebase",
@@ -47,7 +56,7 @@ export const Projects = [
     github: "https://github.com/sanibalakrishna/House-Auction-App",
   },
   {
-    id: 2,
+    id: 3,
     title: "CoderX",
     imgSrc: CodeX,
     techStack: "Next-JS,Tailwind,Rest API",
@@ -55,7 +64,7 @@ export const Projects = [
     github: "https://github.com/sanibalakrishna/CoderX",
   },
   {
-    id: 3,
+    id: 4,
     title: "Shoe Store",
     imgSrc: Shoe,
     techStack: "React-JS,Tailwind,Rest API",
@@ -63,7 +72,7 @@ export const Projects = [
     github: "https://github.com/sanibalakrishna/shoestore",
   },
   {
-    id: 4,
+    id: 5,
     title: "TodoX",
     imgSrc: todo,
     techStack: "Next JS,HTML/CSS",
@@ -71,7 +80,7 @@ export const Projects = [
     github: "https://github.com/sanibalakrishna/Todo",
   },
   {
-    id: 5,
+    id: 6,
     title: "Ellen",
     imgSrc: Ellen,
     techStack: "Unity-3D,C#,Assets",
@@ -80,7 +89,7 @@ export const Projects = [
       "https://drive.google.com/drive/folders/1dQN37myGaa14shQwjnAjO0cZLi5x6K7x?usp=sharing",
   },
   {
-    id: 6,
+    id: 7,
     title: "Smart-Health-Monitoring-System",
     imgSrc: shms,
     techStack: "IoT,c++",

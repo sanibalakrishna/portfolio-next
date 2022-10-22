@@ -41,23 +41,13 @@ function Text3d() {
   });
 
   return (
-<<<<<<< HEAD
-    <mesh>
-=======
-    <mesh position={[-15,0,0]}>
->>>>>>> e2ad735b1095de5a476d86f78c7e69fc49f9f9cc
+    <mesh position={[-15, 0, 0]}>
       <textGeometry
         ref={textMesh}
         attach="geometry"
         args={["Balakrishna", textOptions]}
-
       />
-<<<<<<< HEAD
       <meshMatcapMaterial matcap={map} />
-=======
-      <meshMatcapMaterial matcap={map} /> 
-     
->>>>>>> e2ad735b1095de5a476d86f78c7e69fc49f9f9cc
     </mesh>
   );
 }

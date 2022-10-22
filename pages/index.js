@@ -112,8 +112,8 @@ export default function Home() {
             />
 
             <p className="text-2xl text-[#1c41f6] w-96 font-Satisfy">
-              I'm a Engineering Graduate in Electronics and built my skills more
-              over in the field of Computer Science like{" "}
+              I{"'"}m a Engineering Graduate in Electronics and built my skills
+              more over in the field of Computer Science like{" "}
               <span className="text-[#f9552d]">Web Development</span> including
               HTML, CSS, JavaScript, Frameworks like React-JS, Next-JS, Node-JS,
               Express, Database like Mongodb etc... . I also found interest

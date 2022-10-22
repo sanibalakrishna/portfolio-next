@@ -26,24 +26,21 @@ function Text3d() {
   const font = new FontLoader().parse(helvetiker);
   const textOptions = {
     font,
-    size: 6,
-    height: 2,
+    size: 4,
+    height: 4,
   };
   const map = useLoader(THREE.TextureLoader, "/static/color.png");
 
   return (
-    <mesh>
-      {/* <textGeometry
+    <mesh position={[-15,0,0]}>
+      <textGeometry
         ref={textMesh}
         attach="geometry"
         args={["Balakrishna", textOptions]}
-        position
+
       />
-      <meshMatcapMaterial matcap={map} /> */}
-      <Text3D font={font} {...textOptions}>
-        Hello world!
-        <meshNormalMaterial />
-      </Text3D>
+      <meshMatcapMaterial matcap={map} /> 
+     
     </mesh>
   );
 }

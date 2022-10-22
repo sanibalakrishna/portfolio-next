@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { Canvas, useThree, useLoader, extend } from "@react-three/fiber";
+import {
+  Canvas,
+  useThree,
+  useLoader,
+  extend,
+  useFrame,
+} from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
@@ -26,24 +32,23 @@ function Text3d() {
   const font = new FontLoader().parse(helvetiker);
   const textOptions = {
     font,
-    size: 6,
-    height: 2,
+    size: 4,
+    height: 4,
   };
   const map = useLoader(THREE.TextureLoader, "/static/color.png");
+  useFrame(({ clock }) => {
+    textMesh.current.__r3f.parent.rotation.y = clock.getElapsedTime();
+  });
 
   return (
     <mesh>
-      {/* <textGeometry
+      <textGeometry
         ref={textMesh}
         attach="geometry"
         args={["Balakrishna", textOptions]}
         position
       />
-      <meshMatcapMaterial matcap={map} /> */}
-      <Text3D font={font} {...textOptions}>
-        Hello world!
-        <meshNormalMaterial />
-      </Text3D>
+      <meshMatcapMaterial matcap={map} />
     </mesh>
   );
 }

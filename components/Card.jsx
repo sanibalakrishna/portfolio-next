@@ -9,7 +9,7 @@ function Card({ title, imgSrc, techStack, live, github }) {
   const [state, setState] = useState(false);
   return (
     <AnimatePresence initial={false}>
-      <div className="h-48 w-72 bg-[#7b92f752] rounded-lg flex flex-col items-center">
+      <div className="h-48 w-72 bg-[#fffbfb2c] rounded-lg border border-black flex flex-col items-center hover:scale-105 hover:border hover:border-white">
         <h1 className="font-semibold text-white">{title}</h1>
         <div className="px-2">
           <Image
@@ -22,15 +22,15 @@ function Card({ title, imgSrc, techStack, live, github }) {
         </div>
         <div className="flex flex-row items-center gap-2">
           <p className="text-black text-sm pt-2">{techStack}</p>
-          <Link href={live} className="pt-2 pl-2" target="_blank">
+          <Link href={live} className="pt-2 pl-2 " target="_blank">
             <motion.div whileTap={{ scale: 0.5 }}>
-              <BsBoxArrowUpRight />
+              <BsBoxArrowUpRight className=" text-white" />
             </motion.div>
           </Link>
           <Link href={github} className="pt-2 pl-2" target="_blank">
             <motion.div whileTap={{ scale: 0.5 }}>
               <BsGithub
-                className="text-textBase text-3xl cursor-pointer"
+                className="text-textBase text-3xl cursor-pointer  text-white"
                 style={{ fontSize: "20px" }}
               />
             </motion.div>

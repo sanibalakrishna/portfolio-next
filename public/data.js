@@ -5,6 +5,8 @@ import Ellen from "./assets/Ellen.png";
 import shms from "./assets/shms.png";
 import todo from "./assets/todo.png";
 import dex from "./assets/dex.png";
+import Shoestore from "./assets/shoestore.png";
+import testinvisi from "./assets/testvalidator.png";
 import {
   IoLogoGithub,
   IoLogoYoutube,
@@ -49,27 +51,27 @@ export const Projects = [
   },
   {
     id: 2,
-    title: "House-Auction-Place",
-    imgSrc: House,
-    techStack: "React-JS,HTML/CSS,Firebase",
-    live: "https://house-auction-app.vercel.app/",
-    github: "https://github.com/sanibalakrishna/House-Auction-App",
+    title: "Shoe Store App",
+    imgSrc: Shoestore,
+    techStack: "React Native,MERN Backend",
+    live: "https://github.com/sanibalakrishna/ShoeStoreApp",
+    github: "https://github.com/sanibalakrishna/ShoeStoreAppp",
   },
   {
     id: 3,
-    title: "CoderX",
-    imgSrc: CodeX,
-    techStack: "Next-JS,Tailwind,Rest API",
-    live: "https://coder-x.vercel.app/",
-    github: "https://github.com/sanibalakrishna/CoderX",
+    title: "Test Invisilation Extension",
+    imgSrc: testinvisi,
+    techStack: "MERN Full Stack",
+    live: "https://github.com/sanibalakrishna/TestInvigilator",
+    github: "https://github.com/sanibalakrishna/TestInvigilator",
   },
   {
     id: 4,
-    title: "Shoe Store",
-    imgSrc: Shoe,
-    techStack: "React-JS,Tailwind,Rest API",
-    live: "https://shoestore-murex.vercel.app/",
-    github: "https://github.com/sanibalakrishna/shoestore",
+    title: "Hospital ",
+    imgSrc: House,
+    techStack: "React-JS,Firebase,Rest API",
+    live: "http://house-auction-app.vercel.app/",
+    github: "https://github.com/sanibalakrishna/House-Auction-App",
   },
   {
     id: 5,
@@ -87,14 +89,6 @@ export const Projects = [
     live: "https://drive.google.com/drive/folders/1dQN37myGaa14shQwjnAjO0cZLi5x6K7x?usp=sharing",
     github:
       "https://drive.google.com/drive/folders/1dQN37myGaa14shQwjnAjO0cZLi5x6K7x?usp=sharing",
-  },
-  {
-    id: 7,
-    title: "Smart-Health-Monitoring-System",
-    imgSrc: shms,
-    techStack: "IoT,c++",
-    live: "https://youtube.com/playlist?list=PLDgXOYvpMgidV5s1dKdGE_smJ17ZyThwI",
-    github: "https://github.com/sanibalakrishna/Smart-Health-Monitoring-System",
   },
 ];
 export const Socials = [
@@ -125,13 +119,5 @@ export const Socials = [
     // ),
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/sani-balakrishna/",
-  },
-  {
-    id: 5,
-    // iconSrc: (
-    //   <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
-    // ),
-    name: "Whatsapp",
-    link: "#",
   },
 ];

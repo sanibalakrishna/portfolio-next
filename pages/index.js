@@ -97,7 +97,7 @@ export default function Home() {
                 delay: 40,
                 strings: [
                   "I'm a Web,App Developer,",
-                  "I'm a BlockChaingi Developer,",
+                  "I'm a BlockChain Developer,",
                   "I'm a Techonlogy Enthasiast,",
                 ],
               }}

@@ -224,10 +224,7 @@ export default function Home() {
             <h1 className="text-center text-6xl text-white font-Rampart ml-10">
               Loading...
             </h1>
-//             <p className="text-red-500 font-Satisfy mt-10 text-xl">
-//               Note - Place the cursor on the right side and scroll to see the
-//               effect
-//             </p>
+
           </div>
         )}
       </div>
